@@ -1,0 +1,12 @@
+<template name="task">
+{{#if isOwner}}
+  <li class="{{#if checked}}checked{{/if}} {{#if private}}private{{/if}}">
+     
+    <input type="checkbox" checked="{{checked}}" class="toggle-checked" />
+
+        
+    <span class="text"><strong> {{formatedDate}} {{username}}</strong> </span>
+    
+  </li>
+  {{/if}}
+</template>
